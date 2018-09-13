@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <input type="text" ><input type="button" value="发送验证吗" >
+	<span>启用</span>
+	<input type="checkbox" checked>
+	<input type="checkbox" checked>
+	<input type="checkbox">
+	<input type="checkbox">
+ </body>
+</html>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(":button").click( function (){
+		
+		//alert ( $(":checkbox[checked]").size() )	
+		$(":checkbox").each( function (){		
+		    if( this.checked ){  // 如果选中 1 			
+				this.checked = false;
+				//alert(11)
+				//$(this).removeAttr("checked")
+				//$(this).attr(checked,false)
+			}else{				
+				this.checked = true;
+				//alert(22)
+				//$(this).removeAttr("checked")
+				//$(this).attr(checked,true)
+			}
+		})
+</script>
